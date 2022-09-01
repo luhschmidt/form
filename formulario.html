@@ -5,40 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CADASTRO</title>
+    <title>FORMULÁRIO</title>
 </head>
 
 <body>
     <div>
-        <h1>
+        <h1 id="titulo">
             Cadrastro de DEVs
         </h1>
-        <p>Cadrastre suas informações</p>
+        <p id="subtitulo">Cadrastre suas informações</p>
         <br>
     </div>
     <form>
-        <fieldset>
-            <div>
-                <label>Nome</label>
-                <input type="text" name="Nome" id="Nome">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="Nome" id="Nome" required>
             </div>
-            <div>
-                <label>Sobrenome</label>
-                <input type="text" name="Sobrenome" id="Sobrenome">
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
             </div>
-            <div>
-                <label>Email</label>
-                <input type="email" name="Email" id="Email">
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="Email" id="Email" required>
             </div>
         </fieldset>
-        <div>
-            <label>De qual lado da aplicação você desenvolve?</label>
-            <label> <input type="radio" name="devweb" value="frontend"> Front-End </label>
-            <label> <input type="radio" name="devweb" value="backend"> Back-end </label>
-            <label> <input type="radio" name="devweb" value="fullstack"> Fullstack </label>
+        <div class="campo">
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <label> <input type="radio" name="devweb" value="frontend">Front-End</label>
+            <label> <input type="radio" name="devweb" value="backend">Back-end</label>
+            <label> <input type="radio" name="devweb" value="fullstack">Fullstack</label>
         </div>
-        <div>
-            <label>Senoridade:</label>
+        <div class="campo">
+            <label for="senoridade"><strong>Senoridade:</strong></label>
             <select id="Senoridade">
                 <option selected disabled></option>
                 <option>Junior</option>
@@ -46,9 +46,9 @@
                 <option>Senior</option>
             </select>
         </div>
-        <fieldset>
-            <div>
-                <label>Selecione as tecnologias que você utiliza:</label>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Selecione as tecnologias que você utiliza:</strong></label>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                 <label for="tecnologia1">HTML</label>
                 <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
@@ -63,11 +63,11 @@
                 <label for="tecnologia6">Java</label>
         </fieldset>
         </div>
-        <div>
-            <label>Conte um pouco da sua experiência:</label>
+        <div class="campo">
+            <label><strong>Conte um pouco da sua experiência:</strong></label>
             <input type="text" width="26em">
         </div>
-        <button type="submit">Enviar</button>
+        <button class="button" type="submit">Enviar</button>
     </form>
 
 </body>
